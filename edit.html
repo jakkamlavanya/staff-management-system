@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Edit Staff</h1>
+
+        <!-- Form to edit student details -->
+        <form action="" method="POST">
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" value="{{ staff.name }}" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="age">Designation</label>
+                    <input type="text" class="form-control" id="desg" name="designation" value="{{ staff.designation }}" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="course">Department</label>
+                    <input type="text" class="form-control" id="dept" name="dept" value="{{ staff.dept }}" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="course">Salary</label>
+                    <input type="text" class="form-control" id="salary" name="salary" value="{{ staff.salary }}" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Update Staff</button>
+        </form>
+
+        <a href="{{ url_for('home') }}" class="btn btn-secondary mt-3">Back to staff List</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+    
+
